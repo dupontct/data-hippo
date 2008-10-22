@@ -1,0 +1,36 @@
+<h1>Editing download</h1>
+
+<% form_for(@download) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :upload_id %><br />
+    <%= f.text_field :upload_id %>
+  </p>
+  <p>
+    <%= f.label :email_address %><br />
+    <%= f.text_field :email_address %>
+  </p>
+  <p>
+    <%= f.label :identity_url %><br />
+    <%= f.text_field :identity_url %>
+  </p>
+  <p>
+    <%= f.label :token %><br />
+    <%= f.text_field :token %>
+  </p>
+  <p>
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </p>
+  <p>
+    <%= f.label :created_on %><br />
+    <%= f.datetime_select :created_on %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @download %> |
+<%= link_to 'Back', downloads_path %>

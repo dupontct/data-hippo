@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  email_address: MyString
+  name: MyString
+  note: MyString
+  confirm: false
+  file: MyString
+  local_filename: MyString
+  expire_date: 2008-10-22 12:11:41
+  password: MyString
+  salt: MyString
+  file_size: 
+  downloads_count: 
+  md5_digest: MyString
+
+two:
+  email_address: MyString
+  name: MyString
+  note: MyString
+  confirm: false
+  file: MyString
+  local_filename: MyString
+  expire_date: 2008-10-22 12:11:41
+  password: MyString
+  salt: MyString
+  file_size: 
+  downloads_count: 
+  md5_digest: MyString

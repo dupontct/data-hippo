@@ -1,0 +1,63 @@
+<p>
+  <b>Email address:</b>
+  <%=h @upload.email_address %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @upload.name %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%=h @upload.note %>
+</p>
+
+<p>
+  <b>Confirm:</b>
+  <%=h @upload.confirm %>
+</p>
+
+<p>
+  <b>File:</b>
+  <%=h @upload.file %>
+</p>
+
+<p>
+  <b>Local filename:</b>
+  <%=h @upload.local_filename %>
+</p>
+
+<p>
+  <b>Expire date:</b>
+  <%=h @upload.expire_date %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%=h @upload.password %>
+</p>
+
+<p>
+  <b>Salt:</b>
+  <%=h @upload.salt %>
+</p>
+
+<p>
+  <b>File size:</b>
+  <%=h @upload.file_size %>
+</p>
+
+<p>
+  <b>Downloads count:</b>
+  <%=h @upload.downloads_count %>
+</p>
+
+<p>
+  <b>Md5 digest:</b>
+  <%=h @upload.md5_digest %>
+</p>
+
+
+<%= link_to 'Edit', edit_upload_path(@upload) %> |
+<%= link_to 'Back', uploads_path %>

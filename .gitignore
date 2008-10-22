@@ -1,0 +1,6 @@
+.*.swp
+*~
+.#*
+#*#
+db/schema.rb
+vendor/plugins/*

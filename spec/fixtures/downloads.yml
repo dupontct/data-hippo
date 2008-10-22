@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  upload_id: 1
+  email_address: MyString
+  identity_url: MyString
+  token: MyString
+  password: MyString
+  created_on: 2008-10-22 10:56:31
+
+two:
+  upload_id: 1
+  email_address: MyString
+  identity_url: MyString
+  token: MyString
+  password: MyString
+  created_on: 2008-10-22 10:56:31

@@ -1,0 +1,33 @@
+<p>
+  <b>Upload:</b>
+  <%=h @download.upload_id %>
+</p>
+
+<p>
+  <b>Email address:</b>
+  <%=h @download.email_address %>
+</p>
+
+<p>
+  <b>Identity url:</b>
+  <%=h @download.identity_url %>
+</p>
+
+<p>
+  <b>Token:</b>
+  <%=h @download.token %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%=h @download.password %>
+</p>
+
+<p>
+  <b>Created on:</b>
+  <%=h @download.created_on %>
+</p>
+
+
+<%= link_to 'Edit', edit_download_path(@download) %> |
+<%= link_to 'Back', downloads_path %>

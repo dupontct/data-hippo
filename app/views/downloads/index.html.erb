@@ -1,0 +1,30 @@
+<h1>Listing downloads</h1>
+
+<table>
+  <tr>
+    <th>Upload</th>
+    <th>Email address</th>
+    <th>Identity url</th>
+    <th>Token</th>
+    <th>Password</th>
+    <th>Created on</th>
+  </tr>
+
+<% for download in @downloads %>
+  <tr>
+    <td><%=h download.upload_id %></td>
+    <td><%=h download.email_address %></td>
+    <td><%=h download.identity_url %></td>
+    <td><%=h download.token %></td>
+    <td><%=h download.password %></td>
+    <td><%=h download.created_on %></td>
+    <td><%= link_to 'Show', download %></td>
+    <td><%= link_to 'Edit', edit_download_path(download) %></td>
+    <td><%= link_to 'Destroy', download, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New download', new_download_path %>

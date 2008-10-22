@@ -1,0 +1,60 @@
+<h1>Editing upload</h1>
+
+<% form_for(@upload) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :email_address %><br />
+    <%= f.text_field :email_address %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :note %><br />
+    <%= f.text_field :note %>
+  </p>
+  <p>
+    <%= f.label :confirm %><br />
+    <%= f.check_box :confirm %>
+  </p>
+  <p>
+    <%= f.label :file %><br />
+    <%= f.text_field :file %>
+  </p>
+  <p>
+    <%= f.label :local_filename %><br />
+    <%= f.text_field :local_filename %>
+  </p>
+  <p>
+    <%= f.label :expire_date %><br />
+    <%= f.datetime_select :expire_date %>
+  </p>
+  <p>
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </p>
+  <p>
+    <%= f.label :salt %><br />
+    <%= f.text_field :salt %>
+  </p>
+  <p>
+    <%= f.label :file_size %><br />
+    <%= f.text_field :file_size %>
+  </p>
+  <p>
+    <%= f.label :downloads_count %><br />
+    <%= f.text_field :downloads_count %>
+  </p>
+  <p>
+    <%= f.label :md5_digest %><br />
+    <%= f.text_field :md5_digest %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @upload %> |
+<%= link_to 'Back', uploads_path %>
